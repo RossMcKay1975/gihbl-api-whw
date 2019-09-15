@@ -6,11 +6,7 @@
     </div>
       <div id="left">
         <p><span>Film Description</span>: {{ film.description }} </p>
-        <p><span>Must Watch</span>: </p>
 
-      </div>
-      <div id="right">
-        <button type="button" v-on:click="makeFavourite">Make Favourite</button>
       </div>
     </div>
   </div>
@@ -30,13 +26,47 @@ export default {
 
 <style lang="css" scoped>
 
-  ul {
-    list-style-type: none;
-    }
+#filmDetail {
+  box-sizing: border-box;
+  height: 550px;
+  width: 60%;
+  background: #eee;
+  color: #222;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
 
-  .button {
-    background-color: #4CAF50;
-  }
+#detailWrapper {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 10px;
+  height: 100%;
+  border-radius: 3px;
+}
+
+#flexWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left, #right {
+  width: 80%;
+}
+
+#left p:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+p span {
+  font-weight: bold;
+}
+
 
 
 
