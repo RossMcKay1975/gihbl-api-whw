@@ -29,18 +29,24 @@ export default {
     fetch('https://ghibliapi.herokuapp.com/films')
     .then(res => res.json())
     .then(films => this.films = films)
-    
-      eventBus.$on('film-selected', (film) => {
-        this.selectedFilm = film
-      })
-    }
+
+    eventBus.$on('film-selected', (film) => {
+      this.selectedFilm = film
+    })
   }
+}
 
 </script>
 
-<style>
-  .main-container {
-    display: flex;
-    justify-content: space-between;
-  }
+<style lang="css" scoped>
+h1 {
+  text-align: center;
+  color: #333;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
 </style>
