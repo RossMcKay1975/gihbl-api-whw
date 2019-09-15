@@ -1,4 +1,4 @@
-# guardian_api_vue_application
+# ghibli_api_vue_application
 
 ## Project setup
 ```
